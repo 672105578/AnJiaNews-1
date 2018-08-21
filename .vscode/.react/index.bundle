@@ -61617,6 +61617,10 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
   var _container2 = _interopRequireDefault(_container);
 
+  var _Container = _require(_dependencyMap[13], "./Meeting/Work/Container");
+
+  var _Container2 = _interopRequireDefault(_Container);
+
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -61650,6 +61654,12 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       screen: _MeetingC2.default,
       navigationOptions: {
         title: '首页'
+      }
+    },
+    Work: {
+      screen: _Container2.default,
+      navigationOptions: {
+        title: '工作'
       }
     },
     Mine: {
@@ -61693,13 +61703,13 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             store: Store,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 56
+              lineNumber: 64
             }
           },
           _react3.default.createElement(StackN, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 57
+              lineNumber: 65
             }
           })
         );
@@ -61729,7 +61739,11 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       marginBottom: 5
     }
   });
+<<<<<<< HEAD
 },493,[118,130,12,494,571,572,645,573,583,656,659,639,660],"App.js");
+=======
+},493,[118,130,12,494,613,614,687,615,625,698,701,681,704,730],"App.js");
+>>>>>>> c2792116f9fe9a7374936b26d11a1b3feba5b829
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = {
     get createNavigationContainer() {
@@ -78931,6 +78945,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
   exports.__esModule = true;
 
+<<<<<<< HEAD
   var _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
@@ -78938,12 +78953,177 @@ __d(function (global, _require, module, exports, _dependencyMap) {
       for (var key in source) {
         if (Object.prototype.hasOwnProperty.call(source, key)) {
           target[key] = source[key];
+=======
+        function Mine() {
+            var _ref;
+
+            var _temp, _this, _ret;
+
+            _classCallCheck(this, Mine);
+
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                args[_key] = arguments[_key];
+            }
+
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Mine.__proto__ || Object.getPrototypeOf(Mine)).call.apply(_ref, [this].concat(args))), _this), _this._renderItem = function (item, index) {
+                return _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                        key: index,
+                        style: styles.sectionItemStyle,
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 10
+                        }
+                    },
+                    item,
+                    " "
+                );
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+>>>>>>> c2792116f9fe9a7374936b26d11a1b3feba5b829
         }
       }
     }
 
+<<<<<<< HEAD
     return target;
   };
+=======
+        _createClass(Mine, [{
+            key: "render",
+            value: function render() {
+                var _this2 = this;
+
+                return _react3.default.createElement(
+                    _reactNative.View,
+                    {
+                        style: styles.container,
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 17
+                        }
+                    },
+                    _react3.default.createElement(
+                        _reactNative.View,
+                        {
+                            style: styles.headerView,
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 18
+                            }
+                        },
+                        _react3.default.createElement(_reactNative.Image, {
+                            style: styles.headerImg,
+                            source: _require(_dependencyMap[4], '../page/touxiang.png'),
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 19
+                            }
+                        })
+                    ),
+                    _react3.default.createElement(
+                        _reactNative.View,
+                        {
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 24
+                            }
+                        },
+                        _react3.default.createElement(_reactNative.SectionList, {
+                            renderItem: function renderItem(_ref2) {
+                                var item = _ref2.item,
+                                    index = _ref2.index;
+                                return _this2._renderItem(item, index);
+                            },
+                            renderSectionHeader: function renderSectionHeader(_ref3) {
+                                var title = _ref3.section.title;
+                                return _react3.default.createElement(
+                                    _reactNative.Text,
+                                    {
+                                        style: {
+                                            fontWeight: "bold",
+                                            height: 15
+                                        },
+                                        __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 28
+                                        }
+                                    },
+                                    " "
+                                );
+                            },
+                            sections: [{
+                                title: "",
+                                data: ["关于我们"]
+                            }, {
+                                title: "",
+                                data: ["系统设置"]
+                            }],
+                            ItemSeparatorComponent: function ItemSeparatorComponent() {
+                                return _react3.default.createElement(
+                                    _reactNative.View,
+                                    {
+                                        style: {
+                                            height: 1
+                                        },
+                                        __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 34
+                                        }
+                                    },
+                                    _react3.default.createElement(_reactNative.Text, {
+                                        __source: {
+                                            fileName: _jsxFileName,
+                                            lineNumber: 34
+                                        }
+                                    })
+                                );
+                            },
+                            keyExtractor: function keyExtractor(item, index) {
+                                return item + index;
+                            },
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 25
+                            }
+                        })
+                    )
+                );
+            }
+        }]);
+
+        return Mine;
+    }(_react2.PureComponent));
+
+    var styles = _reactNative.StyleSheet.create({
+        headerView: {
+            height: 100,
+            backgroundColor: '#41BFFC',
+            alignContent: 'center',
+            alignItems: 'center'
+        },
+        headerImg: {
+            width: 40,
+            height: 40
+        },
+        sectionItemStyle: {
+            height: 40,
+            textAlignVertical: 'auto',
+            backgroundColor: "#ffffff",
+            color: '#5C5C5C',
+            fontSize: 20
+        }
+    });
+
+    exports.default = Mine;
+},705,[118,130,294,12,731],"Meeting/Mine/page/Mine.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _invariant = _require(_dependencyMap[0], "../utils/invariant");
+>>>>>>> c2792116f9fe9a7374936b26d11a1b3feba5b829
 
   var _typeof = typeof Symbol === "function" && typeof (typeof Symbol === "function" ? Symbol.iterator : "@@iterator") === "symbol" ? function (obj) {
     return typeof obj;
@@ -82517,6 +82697,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 __d(function (global, _require, module, exports, _dependencyMap) {
     global.server = 'http://zhyl.yong-gang.com';
 
+<<<<<<< HEAD
     global.randomColor = function getRandomColor() {
         var r = Math.floor(Math.random() * 256);
         var g = Math.floor(Math.random() * 256);
@@ -82524,6 +82705,126 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         return "rgb(" + r + ',' + g + ',' + b + ")";
     };
 },663,[],"Constant.js");
+=======
+    return Container;
+  }
+},727,[118,130,500,525],"node_modules/react-navigation/src/views/CardStack/PointerEventsContainer.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    var _reactRedux = _require(_dependencyMap[0], "react-redux");
+
+    var _Work = _require(_dependencyMap[1], "./Work");
+
+    var _Work2 = _interopRequireDefault(_Work);
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    var mapStateToProps = function mapStateToProps(state) {
+        return {};
+    };
+
+    var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+        return {};
+    };
+
+    exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_Work2.default);
+},730,[615,732],"Meeting/Work/Container.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+  module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
+    "__packager_asset": true,
+    "httpServerLocation": "/assets/Meeting/Mine/page",
+    "width": 60,
+    "height": 60,
+    "scales": [1],
+    "hash": "07028f643286b403921ef4c655e0ecdf",
+    "name": "touxiang",
+    "type": "png"
+  });
+},731,[326],"Meeting/Mine/page/touxiang.png");
+__d(function (global, _require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    var _react2 = _require(_dependencyMap[0], "react");
+
+    var _react3 = _interopRequireDefault(_react2);
+
+    var _index = _require(_dependencyMap[1], "./../../node_modules/react-transform-hmr/lib/index.js");
+
+    var _index2 = _interopRequireDefault(_index);
+
+    var _jsxFileName = "/Users/zry/Documents/AnJiaNews/Meeting/Work/Work.js";
+
+    var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+    var _reactNative = _require(_dependencyMap[2], "react-native");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+    function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+    var _components = {
+        Work: {
+            displayName: "Work"
+        }
+    };
+
+    var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+        filename: "/Users/zry/Documents/AnJiaNews/Meeting/Work/Work.js",
+        components: _components,
+        locals: [module],
+        imports: [_react3.default]
+    });
+
+    function _wrapComponent(id) {
+        return function (Component) {
+            return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+        };
+    }
+
+    var Work = _wrapComponent("Work")(function (_PureComponent) {
+        _inherits(Work, _PureComponent);
+
+        function Work() {
+            var _ref;
+
+            var _temp, _this, _ret;
+
+            _classCallCheck(this, Work);
+
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                args[_key] = arguments[_key];
+            }
+
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Work.__proto__ || Object.getPrototypeOf(Work)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _temp), _possibleConstructorReturn(_this, _ret);
+        }
+
+        _createClass(Work, [{
+            key: "render",
+            value: function render() {
+                return _react3.default.createElement(_reactNative.View, {
+                    __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 8
+                    }
+                });
+            }
+        }]);
+
+        return Work;
+    }(_react2.PureComponent));
+
+    exports.default = Work;
+},732,[118,130,12],"Meeting/Work/Work.js");
+>>>>>>> c2792116f9fe9a7374936b26d11a1b3feba5b829
 require(52);
 require(11);
 //# sourceMappingURL=index.map

@@ -7,7 +7,7 @@ class Mine extends PureComponent {
     _renderItem = (item,index)=>{
         
         return (
-            <Text key={index} style={styles.sectionItemStyle}>{item} </Text>
+            <Text style={styles.sectionItemStyle} key={index} style={styles.sectionItemStyle}>{item} </Text>
         )
     }
     
@@ -19,6 +19,7 @@ class Mine extends PureComponent {
                 <Image style={styles.headerImg}
                 source = {require('../page/touxiang.png')}
                 />
+                <Text style={{width:30,height:30,alignContent:'center'}}>姓名</Text>
 
             </View>
             <View>
@@ -53,16 +54,18 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     headerImg:{
-        width:40,
-        height:40,
+        width:60,
+        height:60,
         // borderRadius:15,
     },
     sectionItemStyle:{
         height: 40, 
-        textAlignVertical: 'auto', 
+        textAlign:'left',
         backgroundColor: "#ffffff", 
         color: '#5C5C5C', 
-        fontSize: 20
+        fontSize: 20,
+        paddingTop:8,
+        paddingLeft:10
     }
 
 });
